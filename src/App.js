@@ -13,10 +13,10 @@ function App() {
     const name = e.target.name
     if (data[name] === true) {
       data[name] = false
-      setDependency(false)
+      setDependency(!dependency)
     } else if (data[name] === false) {
       data[name] = true
-      setDependency(true)
+      setDependency(!dependency)
     }
   }
 
